@@ -1,0 +1,26 @@
+.banner {
+    @include flex(center, center);
+    margin: 0 auto;
+    background-color: RGB(255, 255, 255, 0.3);
+    line-height: 1;
+    border-radius: 3px;
+    padding: 16px 60px 16px 40px;
+    &__wrapper {
+        @include flex;
+    }
+    &__idea {
+        @include flex(center, flex-end, column);
+        margin-right: 20px;
+    }
+    &__title {
+        @include text($H60, 300, $HOME-ACTIVE-COLOR);
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        @include text($H60, 300, $HOME-ACTIVE-COLOR);
+    }
+    &__slogan {
+        @include text($H138, 700, $HOME-ACTIVE-COLOR);
+        text-transform: uppercase;
+    }
+}

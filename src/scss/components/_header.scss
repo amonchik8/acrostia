@@ -1,0 +1,18 @@
+.header {
+  @include flex(flex-start, center, column);
+  min-height: 100vh;
+  background-image: url(.././assets/images/homeBackGround.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__anchor {
+    display: flex;
+  }
+  &__container {
+    // @include flex(flex-start, stretch, column);
+    // flex-grow: 1;
+  }
+  &__navigation {
+    margin-bottom: 300px;
+  }
+}

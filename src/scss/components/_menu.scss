@@ -1,0 +1,28 @@
+.menu {
+    @include flex(center, center);
+    text-align: center;
+    &__item {
+        // margin-top: -20px;
+        @include flex(flex-end, center, column);
+        width: 100px;
+        height: 80px;
+        border-radius: 7px;
+        @include text($H18, 400, $WHITE);
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+        &--home {
+            background-color: $HOME-ACTIVE-COLOR;
+        }
+        &--services {
+            background-color: $SERVICES-ACTIVE-COLOR;
+        }
+        &--about {
+            background-color: $ABOUT-ACTIVE-COLOR;
+        }
+    }
+    &__anchor {
+        color: $WHITE;
+        margin-bottom: 15px;
+    }
+}

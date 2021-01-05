@@ -1,0 +1,36 @@
+//Colors
+$WHITE: #fff;
+$BLACK: #000;
+$HOME-ACTIVE-COLOR: #74c7d5;
+$SERVICES-ACTIVE-COLOR: #df5c64;
+$SERVICES-BG-COLOR:#b24a50;
+$SERVICES-CARD-COLOR: #c8535a;
+$ABOUT-ACTIVE-COLOR: #91778e;
+$ABOUT-BG-COLOR:#665464;
+$WORK-ACTIVE-COLOR: #a1ca6c;
+$WORK-BG-COLOR:#81a256;
+$CONTACTS-ACTIVE-COLOR: #82c8bd;
+$CONTACTS-BG-COLOR: #75b4aa;
+
+
+// Fonts
+$BASE-FONT: 'Lato', sans-serif;
+$LOGO-FONT: 'Damion', cursive;
+$base-font-size: 16px;
+
+//Font Sizes
+@function calcRem($size) {
+    $remSize: $size / $base-font-size;
+    @return #{$remSize}rem;
+}
+
+$H138: calcRem(138px);
+$H60: calcRem(60px);
+$H50: calcRem(50px);
+$H30: calcRem(30px);
+$H26: calcRem(26px);  
+$H25: calcRem(25px);  
+$H20: calcRem(20px); 
+$H18: calcRem(18px);
+$H16: calcRem(16px);  
+$H14: calcRem(14px);

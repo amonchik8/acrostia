@@ -1,0 +1,47 @@
+.services {
+  background-color: $SERVICES-BG-COLOR;
+  background-image: url(".././assets/images/servicesBackGround.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include flex(flex-start, center, column);
+  text-align: center;
+  // height: 100vh;
+  &__anchor {
+    display: flex;
+  }
+  &__container {
+    padding-bottom: 120px;
+  }
+  &__navigation {
+    margin-bottom: 120px;
+  }
+  &__title {
+    margin-bottom: 45px;
+  }
+  &__subtitle {
+    @include text($H20, 400, $WHITE);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  &__description {
+    margin-bottom: 120px;
+  }
+  &__card {
+    height: 400px;
+    background-color: $SERVICES-CARD-COLOR;
+    padding: 50px 25px 40px;
+  }
+  &__card-icon {
+    margin-bottom: 35px;
+  }
+  &__card-title {
+    @include text($H30, 300, $WHITE);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  &__card-description {
+    @include text($H14, 400, $WHITE);
+    line-height: 1.4;
+  }
+}

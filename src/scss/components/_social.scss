@@ -1,0 +1,10 @@
+.social {
+    display: flex;
+    &__item {
+        @include flex(center, center);
+        border-radius: 50%;
+    }
+    &__icon {
+        color: $WHITE;
+    }
+}

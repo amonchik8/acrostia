@@ -1,0 +1,107 @@
+.about {
+  background-color: $ABOUT-BG-COLOR;
+  background-image: url(".././assets/images/aboutBackGround.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include flex(flex-start, center, column);
+  text-align: center;
+  &__container {
+    padding-bottom: 110px;
+  }
+  &__anchor {
+    display: flex;
+  }
+  &__navigation {
+    margin-bottom: 130px;
+  }
+  &__title {
+    margin-bottom: 35px;
+  }
+  &__description {
+    margin-bottom: 60px;
+  }
+  &__team {
+    margin: 0 auto;
+    @include text($H25, 700, $WHITE);
+    text-transform: uppercase;
+    background-color: $WORK-ACTIVE-COLOR;
+    border-radius: 6px;
+    line-height: 2.3;
+    margin-bottom: 50px;
+    width: max-content;
+    padding: 0 42px;
+    position: relative;
+    &:after {
+      position: absolute;
+      z-index: 2;
+      content: "";
+      @include size(22px);
+      background-color: $WORK-ACTIVE-COLOR;
+      top: 45px;
+      left: 46%;
+      transform: rotate(45deg);
+    }
+  }
+  &__card {
+    background-color: #4d3f4b;
+    padding: 50px 33px 33px 33px;
+    @include hover {
+      cursor: pointer;
+      .about__card-icon {
+        fill: $SERVICES-ACTIVE-COLOR;
+        stroke: $SERVICES-ACTIVE-COLOR;
+      }
+      .about__social-item--facebook {
+        background-color: #4f689e;
+      }
+      .about__social-item--twitter {
+        background-color: #74c7d5;
+      }
+      .about__social-item--google {
+        background-color: #df5c64;
+      }
+      .about__social-item--linkedin {
+        background-color: #3e61af;
+      }
+      .about__card-name {
+        color: $WHITE;
+      }
+      .about__card-position {
+        color: #ff8973;
+      }
+    }
+  }
+  &__card-icon {
+    fill: #5b4b59;
+    stroke: #a1859e;
+    transition: all 0.2s ease;
+    @include size(150px);
+    margin-bottom: 30px;
+  }
+  &__card-name {
+    @include text($H25, 700, #c7b6c5);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+  }
+  &__card-position {
+    @include text($H14, 400, #a1ca6c);
+    margin-bottom: 35px;
+    transition: all 0.2s ease;
+  }
+  &__social-item {
+    @include size(30px);
+    background-color: #a1859e;
+    transition: all 0.2s ease;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+// @include hover {
+//   &__social-item--facebook {
+//     color: #4f689e;
+//   }
+// }

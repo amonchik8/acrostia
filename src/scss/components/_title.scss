@@ -1,0 +1,9 @@
+.title {
+    @include text($H60, 300, $WHITE);
+    text-transform: uppercase;
+    &__description {
+        display: inline-block;
+        @include text($H14, 400, $WHITE);
+        line-height: 1.7;
+    }
+}

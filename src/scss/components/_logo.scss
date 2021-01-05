@@ -1,0 +1,6 @@
+.logo {
+    @include text($H50, 400, $WHITE);
+    font-family: $LOGO-FONT;
+    line-height: 1;
+    height: 30px;
+}

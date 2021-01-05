@@ -1,0 +1,7 @@
+.card {
+    width: 260px;
+    border-radius: 3px;
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
+}
